@@ -6,7 +6,7 @@ global.packname = process.env.PACKNAME || `SHADOW-MD`;
 global.openAiAPI = process.env.OPENAI_API || ""; //Put your openai API key here
 module.exports = {
   gurl: process.env.GURL || "", //your group invite link
-  mongodb: process.env.MONGODB_URL || "",
+  mongodb: process.env.MONGODB_URL || "mongodb+srv://pobasuyi69:9UW3Yra6HZFUCT0B@cluster0.lum7yrw.mongodb.net/?retryWrites=true&w=majority",
   SESSION_ID: process.env.SESSION_ID || "",
   AUTO_VIEW_STATUS: process.env.AUTO_VIEW_STATUS || "true",
   AUTOBIO: process.env.AUTOBIO || "",
