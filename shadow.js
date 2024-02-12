@@ -231,7 +231,7 @@ module.exports = async (shadow, m, commands, chatUpdate) => {
       if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
         return;
       } else if (budy.includes(config.antilink)) {
-        const bvl = `⚠️ Link Detected ⚠️.\n*link sucessfully deleted*`;
+        const bvl = config.antilinkmsg;
         await shadow.sendMessage(
           from,
           {
