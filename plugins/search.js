@@ -1,7 +1,7 @@
 const axios = require("axios");
 const yts = require("youtube-yts");
 const googleit = require("google-it");
-const { ringtone } = require("../lib/Scrapers");
+const { ringtone } = require("../lib/Scraper");
 const { Sticker, StickerTypes } = require("wa-sticker-formatter");
 
 let mergedCommands = [
