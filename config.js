@@ -16,6 +16,8 @@ module.exports = {
   disablepm:  process.env.DISABLE_PM || "",
   antilink:  process.env.ANTILINK_VALUE || "https://", //currently supports only one value
   ALIVE_MESSAGE:  process.env.ALIVE_MESSAGE || "",
+  welcomemsg:  process.env.WELCOME_MSG || "",
+  goodbyemsg:  process.env.GOODBYE_MSG || "",
   alwaysonline: process.env.ALWAYS_ONLINE || "",
   WORKTYPE: process.env.WORKTYPE || "",
   TENORAPI: process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
