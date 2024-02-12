@@ -87,7 +87,7 @@ const startshadow = async () => {
   shadow.public = true;
 
   async function installPlugin() {
-    console.log(chalk.yellow("Checking for Plugins...\n"));
+    console.log(chalk.yellow("Checking for plugins...\n"));
     let plugins = [];
     try {
       plugins = await getPluginURLs();
@@ -102,18 +102,18 @@ const startshadow = async () => {
 
     if (!plugins.length || plugins.length == 0) {
       console.log(
-        chalk.redBright("No Extra Plugins Installed ! Starting Shadow...\n"),
+        chalk.redBright("No Extra plugins Installed ! Starting Shadow...\n"),
       );
     } else {
       console.log(
-        chalk.greenBright(plugins.length + " Plugins found ! Installing...\n"),
+        chalk.greenBright(plugins.length + " plugins found ! Installing...\n"),
       );
       for (let i = 0; i < plugins.length; i++) {
         pluginUrl = plugins[i];
         var { body, statusCode } = await got(pluginUrl);
         if (statusCode == 200) {
           try {
-            var folderName = "Plugins";
+            var folderName = "plugins";
             var fileName = path.basename(pluginUrl);
 
             var filePath = path.join(folderName, fileName);
@@ -125,7 +125,7 @@ const startshadow = async () => {
       }
       console.log(
         chalk.greenBright(
-          "All Plugins Installed Successfully ! Starting shadow...\n",
+          "All plugins Installed Successfully ! Starting shadow...\n",
         ),
       );
     }
