@@ -7,6 +7,7 @@ const {
   downloadContentFromMessage,
   makeInMemoryStore,
   jidDecode,
+  useMultiFileAuthState,
 } = require("@whiskeysockets/baileys");
 const fs = require("fs");
 const figlet = require("figlet");
