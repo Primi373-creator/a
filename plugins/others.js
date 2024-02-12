@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { getBuffer } = require("../System/Function2.js");
+const { getBuffer } = require("../lib/Function2.js");
 let mergedCommands = ["toqr"];
 
 module.exports = {
