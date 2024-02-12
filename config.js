@@ -22,5 +22,4 @@ module.exports = {
   PORT: process.env.PORT || "9000",
   PREFIX: process.env.PREFIX || ".",
   ANTILINK_MSG: process.env.ANTILINK_MSG || '',
-  suppl: process.env.SUPPL || "", //shadow bot support group
 };
