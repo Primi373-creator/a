@@ -14,6 +14,7 @@ const figlet = require("figlet");
 const { join } = require("path");
 const got = require("got");
 const pino = require("pino");
+const mongodb = config.mongodb
 const path = require("path");
 const FileType = require("file-type");
 const { Boom } = require("@hapi/boom");
