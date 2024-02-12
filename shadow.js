@@ -1,8 +1,9 @@
-  require("./Configurations");
-require("./System/BotCharacters");
+require("./config");
+require("./lib/themes");
+const config = require("./config");
 const chalk = require("chalk");
 const axios = require("axios");
-const prefix = global.prefa;
+const prefix = config.PREFIX;
 const { QuickDB, JSONDriver } = require("quick.db");
 global.Levels = require("discord-xp");
 module.exports = async (shadow, m, commands, chatUpdate) => {
@@ -221,7 +222,7 @@ module.exports = async (shadow, m, commands, chatUpdate) => {
         `*${budy.replace(
           prefix,
           "",
-        )}* Gomen ne! Command not found or plug-in not installed !\n\nIf you want to see the list of commands, type:    *_${prefix}help_*\n\nOr type:  *_${prefix}pluginlist_* to see installable plug-in list.`,
+        )}* Gomen ne! Command not found!\n\nIf you want to see the list of commands, type:    *_${prefix}help_*\n`,
       );
     }
 
@@ -229,8 +230,8 @@ module.exports = async (shadow, m, commands, chatUpdate) => {
       const linkgce = await shadow.groupInviteCode(from);
       if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
         return;
-      } else if (budy.includes(`https://chat.whatsapp`)) {
-        const bvl = `⚠️ Link Detected ⚠️.\n*Sayonara senpai*`;
+      } else if (budy.includes(config.antilink)) {
+        const bvl = `⚠️ Link Detected ⚠️.\n*link sucessfully deleted*`;
         await shadow.sendMessage(
           from,
           {
