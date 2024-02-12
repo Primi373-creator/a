@@ -3,6 +3,7 @@ let gg = process.env.SUDO;
 global.owner = gg.split(",");
 global.author = process.env.AUTHOR || "By: Cipher";
 global.packname = process.env.PACKNAME || `SHADOW-MD`;
+global.openAiAPI = process.env.OPENAI_API || ""; //Put your openai API key here
 module.exports = {
   gurl: process.env.GURL || "", //your group invite link
   mongodb: process.env.MONGODB_URL || "",
