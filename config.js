@@ -1,6 +1,6 @@
 require("dotenv").config();
-let gg = process.env.SUDO;
-global.owner = gg.split(",");
+let gg = process.env.MODS;
+if (!gg) { gg = "2349049640547"; }  // You can replace this number with yours //
 global.author = process.env.AUTHOR || "By: Cipher";
 global.packname = process.env.PACKNAME || `SHADOW-MD`;
 global.openAiAPI = process.env.OPENAI_API || ""; //Put your openai API key here
