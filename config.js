@@ -4,9 +4,8 @@ global.owner = gg.split(",");
 global.author = process.env.AUTHOR || "By: Cipher";
 global.packname = process.env.PACKNAME || `SHADOW-MD`;
 module.exports = {
+  gurl: process.env.GURL || "", //your group invite link
   mongodb: process.env.MONGODB_URL || "",
-  BOT_INFO: process.env.BOT_INFO || "X-BOT-MD;Aswin Sparky;https://graph.org/file/9b477aaa6b90bbb46e4be.mp4",
-  STICKER_DATA: process.env.STICKER_DATA || "X-BOTMD;ASWIN SPARKY",
   SESSION_ID: process.env.SESSION_ID || "",
   AUTO_VIEW_STATUS: process.env.AUTO_VIEW_STATUS || "true",
   AUTOBIO: process.env.AUTOBIO || "",
@@ -23,4 +22,5 @@ module.exports = {
   PORT: process.env.PORT || "9000",
   PREFIX: process.env.PREFIX || ".",
   ANTILINK_MSG: process.env.ANTILINK_MSG || '',
+  suppl: process.env.SUPPL || "", //shadow bot support group
 };
