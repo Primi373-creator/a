@@ -15,7 +15,6 @@ module.exports = {
   packname: global.packname,
   disablepm:  process.env.DISABLE_PM || "",
   antilink:  process.env.ANTILINK_VALUES || "https://",
-  antilinkaction: process.env.ANTILINK_ACTION  || "delete",
   ALIVE_MESSAGE:  process.env.ALIVE_MESSAGE || "",
   alwaysonline: process.env.ALWAYS_ONLINE || "",
   WORKTYPE: process.env.WORKTYPE || "",
