@@ -21,6 +21,6 @@ module.exports = {
   TENORAPI: process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c",
   PORT: process.env.PORT || "9000",
   PREFIX: process.env.PREFIX || ".",
-  logmsg: process.env.LOGMSG || ".",
+  logmsg: process.env.LOGMSG || "true",
   antilinkmsg: process.env.ANTILINK_MSG || '',
 };
