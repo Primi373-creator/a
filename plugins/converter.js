@@ -1,5 +1,5 @@
 const { getRandom } = require("../lib/Function");
-const { webp2mp4File } = require("../lib/Uploader");
+const { webp2mp4File } = require("../lib/uploader");
 const { toAudio } = require("../lib/File-Converter");
 const { exec } = require("child_process");
 const fs = require("fs");
