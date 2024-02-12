@@ -4,7 +4,7 @@ const { toAudio } = require("../lib/File-Converter");
 const { exec } = require("child_process");
 const fs = require("fs");
 const PDFDocument = require("pdfkit");
-let { GraphOrg } = require("../lib/Uploader");
+let { GraphOrg } = require("../lib/uploader");
 const { getBuffer } = require("../lib/Function2.js");
 
 const util = require("util");
